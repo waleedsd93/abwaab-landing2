@@ -1,0 +1,33 @@
+.accordion {
+  transition: 0.3s all ease;
+  background-color: white;
+  padding-inline: 20px;
+  cursor: pointer;
+  box-shadow: 0px 9px 20px #0000001a;
+}
+
+.accordion > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding-block: 20px;
+  gap: 20px;
+}
+
+.accordion > div:first-child svg {
+  font-size: 30px;
+}
+
+.accordion > div:last-child {
+  transition: 0.3s all ease;
+  overflow: hidden;
+}
+.active {
+  background-color: #eff9fa;
+}
+
+.accordion.close > div:last-child {
+  margin: 0;
+}

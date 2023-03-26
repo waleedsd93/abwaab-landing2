@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --orange-color: rgba(242, 148, 35, 1);
+  --title-color: rgba(24, 59, 86, 1);
+  --text-color: rgba(90, 113, 132, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+a {
+  color: var(--text-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+* {
+  padding: 0;
+  margin: 0;
+  direction: rtl;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+  max-width: 1260px;
+  margin-inline: auto;
+  padding-inline: 50px;
+}
+.accordion-div {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  margin-block: 50px;
+  overflow: hidden;
+}
+
+.accordion-div > h3 {
+  color: var(--title-color);
+  font-size: clamp(19px, 20vw, 30px);
+  font-weight: bold;
+}
+.accordion-div > span {
+  color: rgba(5, 156, 174, 1);
+  font-size: 15px;
+  display: block;
+  font-weight: bold;
+}
+
+.accordion-div > p {
+  font-size: 20px;
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+.title {
+  color: var(--title-color);
+  font-size: clamp(19px, 20vw, 30px);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding-inline: 20px;
+  }
+}
+
+
+.appstores {
+  text-decoration: none;
+  color: whitesmoke;
+}
+

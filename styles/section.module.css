@@ -1,0 +1,222 @@
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 250px;
+  margin-bottom: 100px;
+  gap: 40px;
+  margin-block: 70px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.markImg > div {
+  display: flex;
+  gap: 10px;
+}
+.markImg > div > div:first-child {
+  margin-top: 21px;
+}
+
+/* .section > div:has(.dots) {
+  position: relative;
+}
+.dots {
+  position: absolute;
+  background-color: green;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+} */
+
+/* .dots:first-child {
+  top: -30px;
+  right: 0px;
+  z-index: 50;
+}
+
+.dots:nth-child(2) {
+  top: 150px;
+  left: 70px;
+  z-index: 50;
+}
+.dots:nth-child(3) {
+  top: 10px;
+  left: 120px;
+  z-index: 50;
+}
+.dots:nth-child(4) {
+  top: 322px;
+  left: 120px;
+  z-index: 50;
+}
+.dots:nth-child(5) {
+  top: 0px;
+  right: 110px;
+  z-index: 50;
+}
+.dots:nth-child(6) {
+  top: 73px;
+  right: 155px;
+}
+.dots:nth-child(7) {
+  bottom: 23px;
+  right: 105px;
+}
+
+.dots:last-child {
+  bottom: -10px;
+  left: 94px;
+  z-index: 50;
+} */
+.section > img {
+  width: 100%;
+  max-width: 500px;
+  object-fit: contain;
+}
+
+.section > div:has(.sectionVideo) {
+  flex: 1;
+  height: fit-content;
+  position: relative;
+}
+.section > div:has(.sectionVideo) svg {
+  position: absolute;
+  right: -24px;
+  bottom: 25px;
+  width: 50px;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  background-color: var(--orange-color);
+  height: 50px;
+}
+
+.sectionVideo {
+  width: 100%;
+  height: 550px;
+  border: 2px solid black;
+  position: relative;
+  object-fit: cover;
+}
+
+.section > div:has(.sectionVideo)::before {
+  content: "";
+  position: absolute;
+  border: 2px solid black;
+  z-index: -10;
+  width: 100%;
+  height: 97.5%;
+  top: 12px;
+  background-color: rgb(255, 255, 255);
+  right: -11px;
+}
+.section > div {
+  max-width: 550px;
+  flex: 1;
+}
+.section h3 {
+  color: var(--title-color);
+  font-size: clamp(19px, 20vw, 30px);
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+.section > div > div > span {
+  color: rgba(5, 156, 174, 1);
+  font-size: 15px;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 20px;
+  color: var(--text-color);
+  font-weight: 400;
+}
+.section > div > div > div {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+.section button {
+  border: none;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  gap: 9px;
+  padding: 10px 7px;
+  cursor: pointer;
+  transition: 0.3s all ease;
+  background-color: black;
+  align-items: center;
+}
+
+.section button:hover {
+  scale: 1.1;
+  background-color: rgb(21, 21, 21);
+}
+
+.section button img {
+  width: 25px;
+  height: 25px;
+}
+
+@media (max-width: 1000px) {
+  .section {
+    flex-direction: column;
+    text-align: center;
+    margin-block: 50px;
+    gap: 0px;
+  }
+  .columnReverse {
+    gap: 30px;
+    flex-direction: column-reverse;
+  }
+  .section p {
+    font-size: 18px;
+    color: var(--text-color);
+    font-weight: 400;
+  }
+  .section span {
+    margin-bottom: 20px;
+  }
+  .section h3 {
+    font-size: 25px;
+  }
+
+  .section > div > div > div {
+    justify-content: center;
+    gap: 9px;
+    flex-wrap: wrap;
+  }
+
+  .section button img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .markImg > div:first-child > div > img {
+    display: none;
+  }
+  .markDiv {
+    display: none;
+  }
+  .markImg div {
+    gap: 0px;
+  }
+}
+@media (max-width: 500px) {
+  .sectionVideo {
+    height: 350px;
+  }
+  .section > div:has(.sectionVideo) svg {
+    right: -15px;
+    bottom: 28px;
+    width: 40px;
+    cursor: pointer;
+    height: 40px;
+  }
+}

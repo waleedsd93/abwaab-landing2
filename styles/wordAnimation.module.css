@@ -1,0 +1,36 @@
+.wordsAnimation {
+  padding-block: 45px;
+  background-color: rgba(240, 239, 239, 0.888);
+  overflow: hidden;
+  position: relative;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-weight: bold;
+}
+.wordsAnimation div {
+  height: 100%;
+  display: flex;
+  animation: 36s linear move infinite;
+  transform: translate(100%);
+  position: absolute;
+  align-items: center;
+  top: 0;
+}
+
+.wordsAnimation div p {
+  padding-inline: 25px;
+}
+
+.wordsAnimation div:last-child {
+  animation-delay: 18s;
+}
+
+@keyframes move {
+  from {
+  }
+  to {
+    transform: translate(-100%);
+  }
+}

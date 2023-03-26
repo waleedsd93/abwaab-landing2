@@ -1,0 +1,65 @@
+.contactDiv {
+  background-color: rgba(242, 149, 35, 0.267);
+  margin-block: 50px;
+  padding-block: 50px;
+}
+.contactDivContent {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactDivInput {
+  background-color: white;
+  border-radius: 30px;
+  height: 50px;
+  width: 100%;
+  min-width: 210px;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  position: relative;
+}
+
+.contactDiv span {
+  font-weight: bold;
+  color: var(--orange-color);
+}
+
+.contactDivInput input {
+  width: 100%;
+  border: none;
+  height: 100%;
+  max-width: 130px;
+  margin-right: auto;
+  direction: ltr;
+  font-size: 17px;
+}
+
+.contactDivInput input:focus {
+  border: none;
+  outline: none;
+}
+
+.contactDivInput button {
+  color: white;
+  background-color: var(--orange-color);
+  border-radius: 30px;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+  padding-inline: 30px;
+}
+
+.contactDivInput p {
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .contactDivInput button {
+    padding-inline: 25px;
+  }
+}

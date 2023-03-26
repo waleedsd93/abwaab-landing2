@@ -1,0 +1,77 @@
+.testi {
+  padding-block: 50px;
+  background-color: rgba(207, 236, 240, 0.6);
+}
+
+.testiContent {
+  position: relative;
+  display: flex;
+  max-width: 1200px;
+  overflow: hidden;
+  padding-inline: 22px;
+  align-items: center;
+}
+.testiContent > div {
+  display: flex;
+  align-items: center;
+  transition: 0.4s all ease;
+  gap: 40px;
+  height: 250px;
+}
+
+.testiDiv {
+  background-color: rgb(255, 255, 255);
+  width: 260px;
+  min-width: 260px;
+  height: 180px;
+  border-radius: 16px;
+  padding: 10px 30px;
+  display: grid;
+  transition: 0.3s all ease;
+  place-content: center;
+  position: relative;
+}
+
+.testiDiv span {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(5, 156, 174, 1);
+  position: absolute;
+  color: white;
+  top: -10px;
+  left: 20px;
+  font-size: 28px;
+  border-radius: 5px;
+}
+
+.rightArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -20px;
+  width: 80px;
+  left: 0;
+  height: 80px;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.leftArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -20px;
+  width: 80px;
+  height: 80px;
+  z-index: 99;
+  cursor: pointer;
+}
+
+@media (max-width: 650px) {
+  .testiDiv:first-child {
+    margin-right: 11px;
+  }
+}
