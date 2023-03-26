@@ -43,7 +43,7 @@ const Footer = () => {
         <a href="https://twitter.com/abwaabsa">
           <BsTwitter />
         </a>
-        <a href="https://play.google.com/store/apps/details?id=com.abwab.app&gl=TR">
+        <a href="/play.google.com/store/apps/https:/details?id=com.abwab.app">
           <BsGoogle />
         </a>
       </div>
