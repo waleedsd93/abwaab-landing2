@@ -25,10 +25,19 @@ const Info = () => {
   const [isVisable, setIsVisable] = useState(false);
   const infoRef = useRef();
   useEffect(() => {
-    document.addEventListener("scroll", () => {
-      setIsVisable(infoRef?.current?.getBoundingClientRect().y < 450);
-    });
-    setIsVisable(infoRef?.current?.getBoundingClientRect().y < 450);
+  // set isvisable to true when the component is in the viewport
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisable(true);
+        }
+      }
+    );
+    observer.observe(infoRef.current);
+    return () => {
+      observer.unobserve(infoRef.current);
+    }
+    
   }, []);
 
   useEffect(() => {
@@ -62,9 +71,7 @@ const Info = () => {
     }
   }, [firstNumber, secondNumber, thirdNumber, isVisable]);
 
-  useEffect(() => {
-    console.log();
-  }, []);
+ 
   return (
     <motion.div
       initial={{ y: -100, opacity: 0 }}
