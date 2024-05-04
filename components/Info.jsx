@@ -48,21 +48,21 @@ const Info = () => {
           return;
         }
         setFirstNumber((pre) => pre + 1);
-      }, 10);
+      }, 5);
       const interval2 = setInterval(() => {
         if (secondNumber >= 144) {
           clearInterval(interval2);
           return;
         }
         setSecondNumber((pre) => pre + 1);
-      }, 10);
+      }, 5);
       const interval3 = setInterval(() => {
         if (thirdNumber >= 300) {
           clearInterval(interval3);
           return;
         }
         setThirdNumber((pre) => pre + 1);
-      }, 10);
+      }, 5);
       return () => {
         clearInterval(interval1);
         clearInterval(interval2);
