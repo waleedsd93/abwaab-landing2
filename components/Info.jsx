@@ -43,7 +43,7 @@ const Info = () => {
   useEffect(() => {
     if (isVisable) {
       const interval1 = setInterval(() => {
-        if (firstNumber >= 5) {
+        if (firstNumber >= 15) {
           clearInterval(interval1);
           return;
         }
