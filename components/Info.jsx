@@ -43,21 +43,21 @@ const Info = () => {
   useEffect(() => {
     if (isVisable) {
       const interval1 = setInterval(() => {
-        if (firstNumber >= 51) {
+        if (firstNumber >= 5) {
           clearInterval(interval1);
           return;
         }
         setFirstNumber((pre) => pre + 1);
       }, 40);
       const interval2 = setInterval(() => {
-        if (secondNumber >= 56) {
+        if (secondNumber >= 144) {
           clearInterval(interval2);
           return;
         }
         setSecondNumber((pre) => pre + 1);
       }, 40);
       const interval3 = setInterval(() => {
-        if (thirdNumber >= 91) {
+        if (thirdNumber >= 300) {
           clearInterval(interval3);
           return;
         }
