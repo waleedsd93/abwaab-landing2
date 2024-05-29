@@ -42,7 +42,7 @@ export default function Home() {
           <Info />
           <Section
             id="مميزاتنا"
-            title={`   لاول طلب ...توصيل مجاني!`}
+            title={`  توصيل يبدأ من 10 ريال `}
             img={التوصيل_مجاني.src}
             mark={true}
             reverse={false}
@@ -59,7 +59,7 @@ export default function Home() {
           />
 
           <Section
-            title={`خدمة ضامن`}
+            title={`  الدفع داخل المنصة `}
             img={خدمه_ضامن.src}
             mark={true}
             reverse={false}
